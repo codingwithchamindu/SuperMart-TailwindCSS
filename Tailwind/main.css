@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font {
+  font-family: "Caveat", cursive;
+}
+
+.navbar {
+  @apply flex  items-center justify-between w-full fixed p-10 h-2 bg-blue-800 bg-opacity-10;
+}
+
+
+.nav_items{
+     @apply flex items-center justify-center mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[1rem]  text-white hover:text-[#FFB730] hover:bg-[#ebe6e0] hover:bg-opacity-10 font-semibold font-sans;
+}
+
+.btn{
+     @apply text-2xl text-white bg-[#171a20] font-medium uppercase px-[2.4rem] rounded-[3.2rem] w-[25rem] h-14 brightness-100 hover:text-[#FFB730] hover:bg-[#ebe6e0] hover:bg-opacity-10 shadow-2xl  animate-bounce;
+}
+

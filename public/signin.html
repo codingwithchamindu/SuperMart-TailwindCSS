@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css">
+  <title>Fashion Studio | Login</title>
+</head>
+
+<body class="bg-gray-400 bg-opacity-10">
+  <!-- Signin -->
+
+  <div class="flex items-center justify-center w-full h-screen fixed" id="signin">
+
+    <div class="w-full max-w-xs lg:max-w-sm">
+      <div class="bg-gray-800 rounded-2xl px-4 pt-4 pb-4  border-2 border-indigo-300">
+        <div class="p-2">
+          <h1 class="font-bold text-2xl  text-center text-indigo-300">Login</h1>
+          <label for="Email" class="flex appearance-none font-bold p-2 text-indigo-300 " id="em2">Email</label>
+          <input type="text" placeholder="email"
+            class="border-2 border-indigo-300 rounded-2xl focus:bg-white focus:outline-indigo-300 leading-tight py-2 px-2 w-full">
+
+          <label for="username" class="flex appearance-none font-bold p-2 text-indigo-300 " id="pa2">Password</label>
+          <input type="password" placeholder="password"
+            class="border-2 border-indigo-300 rounded-2xl focus:bg-white focus:outline-indigo-300 leading-tight py-2 px-2 w-full">
+          <p class=" text-indigo-300 text-sm mt-2.5 mb-1 p-2 cursor-pointer">Forgot Password</p>
+        </div>
+
+        <div class="flex items-center justify-center p-2">
+          <button class="w-full rounded-2xl bg-indigo-400 text-white  py-2 px-2 font-semibold hover:bg-indigo-500"
+            onclick="signIn();">Login</button>
+
+        </div>
+        <div class="flex items-center justify-start p-4 text-indigo-300 text-sm font-semibold">
+          <p href="#">
+            Not a member yet ? <a href="#" onclick="changeView();">SignUp</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SignIn -->
+
+  <!-- SignUp -->
+
+  <div class="flex items-center justify-center w-full h-screen">
+    <div class="w-full max-w-xs lg:max-w-sm hidden" id="signup">
+      <div class="bg-gray-800 rounded-2xl px-4 pt-4 pb-4  border-2 border-indigo-300">
+        <div class="p-2">
+          <h1 class="font-bold text-2xl  text-center text-indigo-300">Siginup</h1>
+          <label for="Email" class="flex appearance-none font-bold p-2 text-indigo-300 ">First Name</label>
+          <input type="text" placeholder="first name"
+            class="border-2 border-indigo-300 rounded-2xl focus:bg-white focus:outline-indigo-300 leading-tight py-2 px-2 w-full">
+          <label for="Email" class="flex appearance-none font-bold p-2 text-indigo-300 ">Email</label>
+          <input type="text" placeholder="email"
+            class="border-2 border-indigo-300 rounded-2xl focus:bg-white focus:outline-indigo-300 leading-tight py-2 px-2 w-full">
+          <label for="Email" class="flex appearance-none font-bold p-2 text-indigo-300 ">Mobile</label>
+          <input type="text" placeholder="mobile"
+            class="border-2 border-indigo-300 rounded-2xl focus:bg-white focus:outline-indigo-300 leading-tight py-2 px-2 w-full">
+
+          <label for="username" class="flex appearance-none font-bold p-2 text-indigo-300 ">Password</label>
+          <input type="password" placeholder="password"
+            class="border-2 border-indigo-300 rounded-2xl focus:bg-white focus:outline-indigo-300 leading-tight py-2 px-2 w-full">
+
+          <div class="flex items-center justify-between mt-2.5">
+            <label for="username" class="flex appearance-none font-bold p-2 text-indigo-300 ">Gender</label>
+
+            <div class="flex items-center p-2">
+              <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-indigo-300">
+              <label for="default-radio-1" class="mx-2 font-semiboldbold text-indigo-300">Male</label>
+            </div>
+            <div class="flex items-center p-2">
+              <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                class="w-4 h-4 text-indigo-300">
+              <label for="default-radio-2" class="mx-2 font-semiboldbold text-indigo-300">Female</label>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center p-2">
+          <button
+            class="w-full rounded-2xl bg-indigo-400 text-white  py-2 px-2 font-semibold hover:bg-indigo-500">Siginup</button>
+
+        </div>
+        <div class="flex items-center justify-start p-4 text-indigo-300 text-sm font-semibold">
+          <p href="#">
+            Already User ? <a href="#" onclick="changeView();">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SignUp -->
+  <div class="absolute w-full top-[95%]">
+    <h1 class="text-center text-sm font-sans font-semibold text-gray-800 brightness-200">&copy;2023 coding with
+      chamindu. All rights reserved</h1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

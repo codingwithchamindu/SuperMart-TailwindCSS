@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Super Mart | Home</title>
+</head>
+
+<body class="bg-gray-300 select-none">
+
+    <div class="flex items-center justify-center p-4">
+        <div class="flex">
+            <input type="text" class="px-4 py-2 w-80 rounded-2xl border border-gray-800 " placeholder="Search...">
+            <!--Search icon-->
+            <span
+                class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                id="basic-addon2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                    <path fill-rule="evenodd"
+                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                        clip-rule="evenodd" />
+                </svg>
+            </span>
+        </div>
+    </div>
+
+
+     <!-- Dropdown menu -->
+     <div class="relative" id="dropdownBtn">
+        <div onclick="dropdown()"
+            class="flex items-center w-full border border-gray-800 border-solid py-1 px-4 rounded cursor-pointer font-semibold text-[15px] shadow-sm">
+            Collections
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+
+        </div>
+        <div id="dropdown"
+            class="rounded border-[1px] border-gray-300 bg-white absolute top-[36px] w-[180px] shadow-md hidden">
+            <div class="cursor-pointer hover:bg-gray-300 p-2"> acounts settings</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-2"> acounts settings</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-2"> acounts settings</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-2"> acounts settings</div>
+        </div>
+    </div>
+    <!-- Dropdown menu -->
+
+    <script>
+        function dropdown() {
+            let dropdown = document.querySelector('#dropdownBtn #dropdown');
+            dropdown.classList.toggle("hidden");
+
+        }
+    </script>
+</body>
+
+</html>
